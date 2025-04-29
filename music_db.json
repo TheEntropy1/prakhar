@@ -1,0 +1,548 @@
+{
+    "featured": [
+        {
+            "id": "featured1",
+            "title": "Today's Top Hits",
+            "description": "The most popular songs right now",
+            "image": "/static/images/featured1.jpg"
+        },
+        {
+            "id": "featured2",
+            "title": "RapCaviar",
+            "description": "New music from Drake, Kendrick Lamar and more",
+            "image": "/static/images/featured2.jpg"
+        },
+        {
+            "id": "featured3",
+            "title": "All Out 2010s",
+            "description": "The biggest songs of the 2010s",
+            "image": "/static/images/featured3.jpg"
+        },
+        {
+            "id": "featured4",
+            "title": "Rock Classics",
+            "description": "Rock legends & epic songs",
+            "image": "/static/images/featured4.jpg"
+        },
+        {
+            "id": "featured5",
+            "title": "Chill Hits",
+            "description": "Kick back to the best new and recent chill hits",
+            "image": "/static/images/featured5.jpg"
+        },
+        {
+            "id": "featured6",
+            "title": "Mood Booster",
+            "description": "Get happy with today's dose of feel-good songs",
+            "image": "/static/images/featured6.jpg"
+        }
+    ],
+    "recent": [
+        {
+            "id": "recent1",
+            "title": "Blinding Lights",
+            "artist": "The Weeknd",
+            "image": "/static/images/recent1.jpg"
+        },
+        {
+            "id": "recent2",
+            "title": "Save Your Tears",
+            "artist": "The Weeknd",
+            "image": "/static/images/recent2.jpg"
+        },
+        {
+            "id": "recent3",
+            "title": "Stay",
+            "artist": "The Kid LAROI, Justin Bieber",
+            "image": "/static/images/recent3.jpg"
+        },
+        {
+            "id": "recent4",
+            "title": "good 4 u",
+            "artist": "Olivia Rodrigo",
+            "image": "/static/images/recent4.jpg"
+        },
+        {
+            "id": "recent5",
+            "title": "Levitating",
+            "artist": "Dua Lipa",
+            "image": "/static/images/recent5.jpg"
+        },
+        {
+            "id": "recent6",
+            "title": "Montero",
+            "artist": "Lil Nas X",
+            "image": "/static/images/recent6.jpg"
+        }
+    ],
+    "playlists": [
+        {
+            "id": "playlist1",
+            "title": "Liked Songs",
+            "owner": "You",
+            "followers": 0,
+            "description": "Your liked songs",
+            "image": "/static/images/liked.jpg",
+            "tracks": [
+                {
+                    "title": "Blinding Lights",
+                    "artist": "The Weeknd",
+                    "album": "After Hours",
+                    "date_added": "2 weeks ago",
+                    "duration": "3:20",
+                    "image": "/static/images/recent1.jpg"
+                },
+                {
+                    "title": "Save Your Tears",
+                    "artist": "The Weeknd",
+                    "album": "After Hours",
+                    "date_added": "2 weeks ago",
+                    "duration": "3:35",
+                    "image": "/static/images/recent2.jpg"
+                }
+            ]
+        },
+        {
+            "id": "playlist2",
+            "title": "Workout Mix",
+            "owner": "You",
+            "followers": 0,
+            "description": "Songs to keep you moving",
+            "image": "/static/images/workout.jpg",
+            "tracks": [
+                {
+                    "title": "Levitating",
+                    "artist": "Dua Lipa",
+                    "album": "Future Nostalgia",
+                    "date_added": "1 month ago",
+                    "duration": "3:23",
+                    "image": "/static/images/recent5.jpg"
+                },
+                {
+                    "title": "Montero",
+                    "artist": "Lil Nas X",
+                    "album": "Montero",
+                    "date_added": "3 weeks ago",
+                    "duration": "2:17",
+                    "image": "/static/images/recent6.jpg"
+                }
+            ]
+        }
+    ],
+    "artists": [
+        {
+            "id": "artist1",
+            "name": "The Weeknd",
+            "followers": "85,432,123",
+            "image": "/static/images/artist1.jpg",
+            "popular_tracks": [
+                {
+                    "title": "Blinding Lights",
+                    "album": "After Hours",
+                    "duration": "3:20",
+                    "image": "/static/images/recent1.jpg"
+                },
+                {
+                    "title": "Save Your Tears",
+                    "album": "After Hours",
+                    "duration": "3:35",
+                    "image": "/static/images/recent2.jpg"
+                },
+                {
+                    "title": "Starboy",
+                    "album": "Starboy",
+                    "duration": "3:50",
+                    "image": "/static/images/track3.jpg"
+                }
+            ],
+            "albums": [
+                {
+                    "id": "album1",
+                    "title": "After Hours",
+                    "year": "2020",
+                    "image": "/static/images/album1.jpg"
+                },
+                {
+                    "id": "album2",
+                    "title": "Starboy",
+                    "year": "2016",
+                    "image": "/static/images/album2.jpg"
+                }
+            ]
+        },
+        {
+            "id": "artist2",
+            "name": "Dua Lipa",
+            "followers": "62,123,456",
+            "image": "/static/images/artist2.jpg",
+            "popular_tracks": [
+                {
+                    "title": "Levitating",
+                    "album": "Future Nostalgia",
+                    "duration": "3:23",
+                    "image": "/static/images/recent5.jpg"
+                },
+                {
+                    "title": "Don't Start Now",
+                    "album": "Future Nostalgia",
+                    "duration": "3:03",
+                    "image": "/static/images/track5.jpg"
+                }
+            ],
+            "albums": [
+                {
+                    "id": "album3",
+                    "title": "Future Nostalgia",
+                    "year": "2020",
+                    "image": "/static/images/album3.jpg"
+                }
+            ]
+        }
+    ],
+    "albums": [
+        {
+            "id": "album1",
+            "title": "After Hours",
+            "artist": "The Weeknd",
+            "artist_image": "/static/images/artist1.jpg",
+            "year": "2020",
+            "image": "/static/images/album1.jpg",
+            "tracks": [
+                {
+                    "title": "Alone Again",
+                    "artist": "The Weeknd",
+                    "duration": "4:10",
+                    "image": "/static/images/album1.jpg"
+                },
+                {
+                    "title": "Too Late",
+                    "artist": "The Weeknd",
+                    "duration": "3:59",
+                    "image": "/static/images/album1.jpg"
+                },
+                {
+                    "title": "Hardest To Love",
+                    "artist": "The Weeknd",
+                    "duration": "3:31",
+                    "image": "/static/images/album1.jpg"
+                },
+                {
+                    "title": "Scared To Live",
+                    "artist": "The Weeknd",
+                    "duration": "3:11",
+                    "image": "/static/images/album1.jpg"
+                },
+                {
+                    "title": "Snowchild",
+                    "artist": "The Weeknd",
+                    "duration": "4:07",
+                    "image": "/static/images/album1.jpg"
+                },
+                {
+                    "title": "Escape From LA",
+                    "artist": "The Weeknd",
+                    "duration": "5:55",
+                    "image": "/static/images/album1.jpg"
+                },
+                {
+                    "title": "Heartless",
+                    "artist": "The Weeknd",
+                    "duration": "3:18",
+                    "image": "/static/images/album1.jpg"
+                },
+                {
+                    "title": "Faith",
+                    "artist": "The Weeknd",
+                    "duration": "4:43",
+                    "image": "/static/images/album1.jpg"
+                },
+                {
+                    "title": "Blinding Lights",
+                    "artist": "The Weeknd",
+                    "duration": "3:20",
+                    "image": "/static/images/album1.jpg"
+                },
+                {
+                    "title": "In Your Eyes",
+                    "artist": "The Weeknd",
+                    "duration": "3:58",
+                    "image": "/static/images/album1.jpg"
+                },
+                {
+                    "title": "Save Your Tears",
+                    "artist": "The Weeknd",
+                    "duration": "3:35",
+                    "image": "/static/images/album1.jpg"
+                },
+                {
+                    "title": "Repeat After Me (Interlude)",
+                    "artist": "The Weeknd",
+                    "duration": "3:15",
+                    "image": "/static/images/album1.jpg"
+                },
+                {
+                    "title": "After Hours",
+                    "artist": "The Weeknd",
+                    "duration": "6:01",
+                    "image": "/static/images/album1.jpg"
+                },
+                {
+                    "title": "Until I Bleed Out",
+                    "artist": "The Weeknd",
+                    "duration": "3:12",
+                    "image": "/static/images/album1.jpg"
+                }
+            ]
+        },
+        {
+            "id": "album2",
+            "title": "Starboy",
+            "artist": "The Weeknd",
+            "artist_image": "/static/images/artist1.jpg",
+            "year": "2016",
+            "image": "/static/images/album2.jpg",
+            "tracks": [
+                {
+                    "title": "Starboy",
+                    "artist": "The Weeknd ft. Daft Punk",
+                    "duration": "3:50",
+                    "image": "/static/images/album2.jpg"
+                },
+                {
+                    "title": "Party Monster",
+                    "artist": "The Weeknd",
+                    "duration": "4:09",
+                    "image": "/static/images/album2.jpg"
+                },
+                {
+                    "title": "False Alarm",
+                    "artist": "The Weeknd",
+                    "duration": "3:40",
+                    "image": "/static/images/album2.jpg"
+                },
+                {
+                    "title": "Reminder",
+                    "artist": "The Weeknd",
+                    "duration": "3:38",
+                    "image": "/static/images/album2.jpg"
+                },
+                {
+                    "title": "Rockin'",
+                    "artist": "The Weeknd",
+                    "duration": "3:52",
+                    "image": "/static/images/album2.jpg"
+                },
+                {
+                    "title": "Secrets",
+                    "artist": "The Weeknd",
+                    "duration": "4:25",
+                    "image": "/static/images/album2.jpg"
+                },
+                {
+                    "title": "True Colors",
+                    "artist": "The Weeknd",
+                    "duration": "3:26",
+                    "image": "/static/images/album2.jpg"
+                },
+                {
+                    "title": "Stargirl Interlude",
+                    "artist": "The Weeknd ft. Lana Del Rey",
+                    "duration": "1:51",
+                    "image": "/static/images/album2.jpg"
+                },
+                {
+                    "title": "Sidewalks",
+                    "artist": "The Weeknd ft. Kendrick Lamar",
+                    "duration": "3:51",
+                    "image": "/static/images/album2.jpg"
+                },
+                {
+                    "title": "Six Feet Under",
+                    "artist": "The Weeknd",
+                    "duration": "3:57",
+                    "image": "/static/images/album2.jpg"
+                },
+                {
+                    "title": "Love To Lay",
+                    "artist": "The Weeknd",
+                    "duration": "3:43",
+                    "image": "/static/images/album2.jpg"
+                },
+                {
+                    "title": "A Lonely Night",
+                    "artist": "The Weeknd",
+                    "duration": "3:40",
+                    "image": "/static/images/album2.jpg"
+                },
+                {
+                    "title": "Attention",
+                    "artist": "The Weeknd",
+                    "duration": "3:17",
+                    "image": "/static/images/album2.jpg"
+                },
+                {
+                    "title": "Ordinary Life",
+                    "artist": "The Weeknd",
+                    "duration": "3:41",
+                    "image": "/static/images/album2.jpg"
+                },
+                {
+                    "title": "Nothing Without You",
+                    "artist": "The Weeknd",
+                    "duration": "3:18",
+                    "image": "/static/images/album2.jpg"
+                },
+                {
+                    "title": "All I Know",
+                    "artist": "The Weeknd ft. Future",
+                    "duration": "5:21",
+                    "image": "/static/images/album2.jpg"
+                },
+                {
+                    "title": "Die For You",
+                    "artist": "The Weeknd",
+                    "duration": "4:20",
+                    "image": "/static/images/album2.jpg"
+                },
+                {
+                    "title": "I Feel It Coming",
+                    "artist": "The Weeknd ft. Daft Punk",
+                    "duration": "4:29",
+                    "image": "/static/images/album2.jpg"
+                }
+            ]
+        },
+        {
+            "id": "album3",
+            "title": "Future Nostalgia",
+            "artist": "Dua Lipa",
+            "artist_image": "/static/images/artist2.jpg",
+            "year": "2020",
+            "image": "/static/images/album3.jpg",
+            "tracks": [
+                {
+                    "title": "Future Nostalgia",
+                    "artist": "Dua Lipa",
+                    "duration": "3:04",
+                    "image": "/static/images/album3.jpg"
+                },
+                {
+                    "title": "Don't Start Now",
+                    "artist": "Dua Lipa",
+                    "duration": "3:03",
+                    "image": "/static/images/album3.jpg"
+                },
+                {
+                    "title": "Cool",
+                    "artist": "Dua Lipa",
+                    "duration": "3:29",
+                    "image": "/static/images/album3.jpg"
+                },
+                {
+                    "title": "Physical",
+                    "artist": "Dua Lipa",
+                    "duration": "3:42",
+                    "image": "/static/images/album3.jpg"
+                },
+                {
+                    "title": "Levitating",
+                    "artist": "Dua Lipa",
+                    "duration": "3:23",
+                    "image": "/static/images/album3.jpg"
+                },
+                {
+                    "title": "Pretty Please",
+                    "artist": "Dua Lipa",
+                    "duration": "3:14",
+                    "image": "/static/images/album3.jpg"
+                },
+                {
+                    "title": "Hallucinate",
+                    "artist": "Dua Lipa",
+                    "duration": "3:28",
+                    "image": "/static/images/album3.jpg"
+                },
+                {
+                    "title": "Love Again",
+                    "artist": "Dua Lipa",
+                    "duration": "4:18",
+                    "image": "/static/images/album3.jpg"
+                },
+                {
+                    "title": "Break My Heart",
+                    "artist": "Dua Lipa",
+                    "duration": "3:41",
+                    "image": "/static/images/album3.jpg"
+                },
+                {
+                    "title": "Good In Bed",
+                    "artist": "Dua Lipa",
+                    "duration": "3:38",
+                    "image": "/static/images/album3.jpg"
+                },
+                {
+                    "title": "Boys Will Be Boys",
+                    "artist": "Dua Lipa",
+                    "duration": "2:46",
+                    "image": "/static/images/album3.jpg"
+                }
+            ]
+        }
+    ],
+    "songs": [
+        {
+            "id": "song1",
+            "title": "Blinding Lights",
+            "artist": "The Weeknd",
+            "album": "After Hours",
+            "duration": "3:20",
+            "image": "/static/images/recent1.jpg",
+            "url": "https://www.youtube.com/watch?v=4NRXx6U8ABQ"
+        },
+        {
+            "id": "song2",
+            "title": "Save Your Tears",
+            "artist": "The Weeknd",
+            "album": "After Hours",
+            "duration": "3:35",
+            "image": "/static/images/recent2.jpg",
+            "url": "https://www.youtube.com/watch?v=XXYlFuWEuKI"
+        },
+        {
+            "id": "song3",
+            "title": "Stay",
+            "artist": "The Kid LAROI, Justin Bieber",
+            "album": "F*CK LOVE 3: OVER YOU",
+            "duration": "2:21",
+            "image": "/static/images/recent3.jpg",
+            "url": "https://www.youtube.com/watch?v=kTJczUoc26U"
+        },
+        {
+            "id": "song4",
+            "title": "good 4 u",
+            "artist": "Olivia Rodrigo",
+            "album": "SOUR",
+            "duration": "2:58",
+            "image": "/static/images/recent4.jpg",
+            "url": "https://www.youtube.com/watch?v=gNi_6U5Pm_o"
+        },
+        {
+            "id": "song5",
+            "title": "Levitating",
+            "artist": "Dua Lipa",
+            "album": "Future Nostalgia",
+            "duration": "3:23",
+            "image": "/static/images/recent5.jpg",
+            "url": "https://www.youtube.com/watch?v=TUVcZfQe-Kw"
+        },
+        {
+            "id": "song6",
+            "title": "Montero",
+            "artist": "Lil Nas X",
+            "album": "MONTERO",
+            "duration": "2:17",
+            "image": "/static/images/recent6.jpg",
+            "url": "https://www.youtube.com/watch?v=6swmTBVI83k"
+        }
+    ]
+}

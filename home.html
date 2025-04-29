@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="content-header">
+    <h1 class="content-title">Good afternoon</h1>
+</div>
+
+<div class="content-grid">
+    {% for playlist in featured %}
+    <div class="card" data-type="playlist" data-id="{{ playlist.id }}">
+        <img class="card-image" src="{{ playlist.image }}" alt="{{ playlist.title }}">
+        <h3 class="card-title">{{ playlist.title }}</h3>
+        <p class="card-subtitle">{{ playlist.description }}</p>
+    </div>
+    {% endfor %}
+</div>
+
+<h2 class="content-subtitle" style="margin: 24px 0 16px 0;">Recently played</h2>
+<div class="content-grid">
+    {% for song in recent %}
+    <div class="card" data-type="song" data-id="{{ song.id }}">
+        <img class="card-image" src="{{ song.image }}" alt="{{ song.title }}">
+        <h3 class="card-title">{{ song.title }}</h3>
+        <p class="card-subtitle">{{ song.artist }}</p>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

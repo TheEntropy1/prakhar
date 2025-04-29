@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="content-header">
+    <h1 class="content-title">Search results for "{{ query }}"</h1>
+</div>
+
+{% if results.songs %}
+<h2 class="content-subtitle" style="margin: 24px 0 16px 0;">Songs</h2>
+<div class="content-grid">
+    {% for song in results.songs %}
+    <div class="card" data-type="song" data-id="{{ song.id }}">
+        <img class="card-image" src="{{ song.image }}" alt="{{ song.title }}">
+        <h3 class="card-title">{{ song.title }}</h3>
+        <p class="card-subtitle">{{ song.artist }}</p>
+    </div>
+    {% endfor %}
+</div>
+{% endif %}
+
+{% if results.artists %}
+<h2 class="content-subtitle" style="margin: 24px 0 16px 0;">Artists</h2>
+<div class="content-grid">
+    {% for artist in results.artists %}
+    <div class="card" data-type="artist" data-id="{{ artist.id }}">
+        <img class="card-image" src="{{ artist.image }}" alt="{{ artist.name }}" style="border-radius: 50%;">
+        <h3 class="card-title">{{ artist.name }}</h3>
+        <p class="card-subtitle">Artist</p>
+    </div>
+    {% endfor %}
+</div>
+{% endif %}
+
+{% if results.albums %}
+<h2 class="content-subtitle" style="margin: 24px 0 16px 0;">Albums</h2>
+<div class="content-grid">
+    {% for album in results.albums %}
+    <div class="card" data-type="album" data-id="{{ album.id }}">
+        <img class="card-image" src="{{ album.image }}" alt="{{ album.title }}">
+        <h3 class="card-title">{{ album.title }}</h3>
+        <p class="card-subtitle">{{ album.artist }}</p>
+    </div>
+    {% endfor %}
+</div>
+{% endif %}
+
+{% if results.playlists %}
+<h2 class="content-subtitle" style="margin: 24px 0 16px 0;">Playlists</h2>
+<div class="content-grid">
+    {% for playlist in results.playlists %}
+    <div class="card" data-type="playlist" data-id="{{ playlist.id }}">
+        <img class="card-image" src="{{ playlist.image }}" alt="{{ playlist.title }}">
+        <h3 class="card-title">{{ playlist.title }}</h3>
+        <p class="card-subtitle">By {{ playlist.owner }}</p>
+    </div>
+    {% endfor %}
+</div>
+{% endif %}
+{% endblock %}

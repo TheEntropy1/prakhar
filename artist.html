@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="content-header">
+    <div style="display: flex; align-items: flex-end;">
+        <img src="{{ artist.image }}" alt="{{ artist.name }}" style="width: 200px; height: 200px; margin-right: 24px; border-radius: 50%; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);">
+        <div>
+            <h1 class="content-title" style="font-size: 72px; margin-bottom: 16px;">{{ artist.name }}</h1>
+            <p style="color: var(--light-gray);">{{ artist.followers }} monthly listeners</p>
+        </div>
+    </div>
+</div>
+
+<div style="margin-top: 32px;">
+    <button class="play-button" style="background-color: var(--primary); color: black; border: none; border-radius: 500px; padding: 12px 48px; font-weight: bold; font-size: 14px; margin-bottom: 32px;">Play</button>
+    
+    <h2 class="content-subtitle" style="margin: 24px 0 16px 0;">Popular</h2>
+    <div style="margin-bottom: 32px;">
+        {% for track in artist.popular_tracks %}
+        <div style="display: grid; grid-template-columns: [index] 16px [first] 6fr [last] minmax(120px,1fr); align-items: center; padding: 8px 0; border-radius: 4px;" class="track-row">
+            <span style="grid-column: index; color: var(--light-gray);">{{ loop.index }}</span>
+            <div style="grid-column: first; display: flex; align-items: center;">
+                <img src="{{ track.image }}" alt="{{ track.title }}" style="width: 40px; height: 40px; margin-right: 16px;">
+                <div>
+                    <p style="color: white; margin-bottom: 4px;">{{ track.title }}</p>
+                    <p style="color: var(--light-gray); font-size: 14px;">{{ track.album }}</p>
+                </div>
+            </div>
+            <span style="grid-column: last; text-align: right; color: var(--light-gray);">{{ track.duration }}</span>
+        </div>
+        {% endfor %}
+    </div>
+    
+    <h2 class="content-subtitle" style="margin: 24px 0 16px 0;">Albums</h2>
+    <div class="content-grid">
+        {% for album in artist.albums %}
+        <div class="card" data-type="album" data-id="{{ album.id }}">
+            <img class="card-image" src="{{ album.image }}" alt="{{ album.title }}">
+            <h3 class="card-title">{{ album.title }}</h3>
+            <p class="card-subtitle">{{ album.year }} • Album</p>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="content-header">
+    <div style="display: flex; align-items: flex-end;">
+        <img src="{{ album.image }}" alt="{{ album.title }}" style="width: 200px; height: 200px; margin-right: 24px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);">
+        <div>
+            <p style="text-transform: uppercase; font-size: 12px; margin-bottom: 8px;">Album</p>
+            <h1 class="content-title" style="font-size: 48px; margin-bottom: 16px;">{{ album.title }}</h1>
+            <div style="display: flex; align-items: center; margin-bottom: 8px;">
+                <img src="{{ album.artist_image }}" alt="{{ album.artist }}" style="width: 24px; height: 24px; border-radius: 50%; margin-right: 8px;">
+                <p style="color: white; margin-right: 8px;">{{ album.artist }}</p>
+                <p style="color: var(--light-gray); margin-right: 8px;">•</p>
+                <p style="color: var(--light-gray); margin-right: 8px;">{{ album.year }}</p>
+                <p style="color: var(--light-gray); margin-right: 8px;">•</p>
+                <p style="color: var(--light-gray);">{{ album.tracks|length }} songs</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="margin-top: 32px;">
+    <button class="play-button" style="background-color: var(--primary); color: black; border: none; border-radius: 500px; padding: 12px 48px; font-weight: bold; font-size: 14px; margin-bottom: 32px;">Play</button>
+    
+    <div style="border-bottom: 1px solid var(--gray); padding-bottom: 16px; margin-bottom: 16px; display: grid; grid-template-columns: [index] 16px [first] 6fr [last] minmax(120px,1fr); color: var(--light-gray);">
+        <span style="grid-column: index;">#</span>
+        <span style="grid-column: first;">Title</span>
+        <span style="grid-column: last; text-align: right;">Duration</span>
+    </div>
+    
+    {% for track in album.tracks %}
+    <div style="display: grid; grid-template-columns: [index] 16px [first] 6fr [last] minmax(120px,1fr); align-items: center; padding: 8px 0; border-radius: 4px;" class="track-row">
+        <span style="grid-column: index; color: var(--light-gray);">{{ loop.index }}</span>
+        <div style="grid-column: first; display: flex; align-items: center;">
+            <img src="{{ track.image }}" alt="{{ track.title }}" style="width: 40px; height: 40px; margin-right: 16px;">
+            <div>
+                <p style="color: white; margin-bottom: 4px;">{{ track.title }}</p>
+                <p style="color: var(--light-gray); font-size: 14px;">{{ track.artist }}</p>
+            </div>
+        </div>
+        <span style="grid-column: last; text-align: right; color: var(--light-gray);">{{ track.duration }}</span>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
