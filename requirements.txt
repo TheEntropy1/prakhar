@@ -1,6 +1,6 @@
-flask==2.0.1
-flask-caching==1.10.1
-pytube==12.1.0
-youtube-search-python==1.6.5
-requests==2.26.0
+flask
+flask-caching
+pytube
+youtube-search-python
+requests
 gunicorn
