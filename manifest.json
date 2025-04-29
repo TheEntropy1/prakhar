@@ -1,0 +1,21 @@
+{
+    "name": "Entropy",
+    "short_name": "Entropy",
+    "description": "Premium music streaming service",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#121212",
+    "theme_color": "#1db954",
+    "icons": [
+      {
+        "src": "/static/images/icon.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "/static/images/icon.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
